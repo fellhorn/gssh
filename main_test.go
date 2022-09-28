@@ -16,7 +16,6 @@ func TestBuildGcloudArgs(t *testing.T) {
 		"beta",
 		"compute",
 		"ssh",
-		"--tunnel-through-iap",
 		"--zone",
 		"us-east-2",
 		"--project",

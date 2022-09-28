@@ -1,16 +1,15 @@
 # gssh
 
+**This is a fork from https://github.com/regner/gssh where I only disabled iap-tunneling.**
+
 gssh is meant to make using the gcloud ssh command easier by eliminating the need to
 know the complete name of a given VM and it's zone.
 
 Normally the gcloud SDK would require a command similar to `gcloud beta compute ssh
---tunnel-through-iap --project some-globally-unique-id --zone us-west1-a some-instance-name-4kcq`
+--project some-globally-unique-id --zone us-west1-a some-instance-name-4kcq`
 
 Here is an example of a similar connection with gssh:
 ![Preview](terminalizer/preview.gif)
-
-gssh was built for my needs specifically which is why flags such as `--tunnel-through-iap`
-are enabled by default. No reason that cannot change if others have an opinion.
 
 ## Badges
 
@@ -27,7 +26,6 @@ releases from the [releases](https://github.com/regner/gssh/releases/latest) pag
 
 ## TODO
 
-* [ ] Add ability to disable iap tunnel
 * [ ] Create a preview video/gif/something to demo gssh
 * [ ] Add release to brew
 * [ ] Add test coverage for main.go

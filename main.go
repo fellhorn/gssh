@@ -89,7 +89,6 @@ func buildGcloudArgs(selectedVM vmDetails, selectedProject projectDetails) (args
 		"beta",
 		"compute",
 		"ssh",
-		"--tunnel-through-iap",
 		"--zone",
 		selectedVM.Zone,
 		"--project",
